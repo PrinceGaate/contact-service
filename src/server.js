@@ -2,10 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const contactRoutes = require("./routes/contact.routes");
 
-require("dotenv").config({
-  path: "../.env",
-});
-
+require("dotenv").config();
 const app = express();
 app.set("trust proxy", 1);
 
